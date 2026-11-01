@@ -4,6 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
+    <style>
+        :root {
+            --bg: #f6f4fb;
+            --text: #1f1a2e;
+            --accent: #6c4ce0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #14111d;
+                --text: #ece8f7;
+                --accent: #a48bff;
+            }
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 10vw, 6rem);
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            text-align: center;
+            padding: 0 16px;
+        }
+    </style>
 </head>
 <body>
     <h1>HELLO WORLD</h1>
